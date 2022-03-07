@@ -1,0 +1,23 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_PRODUCT_PRODUCT_VIEW_DEFAULT_TITLE">
+		<message>COM_PRODUCT_PRODUCT_VIEW_DEFAULT_DESC</message>
+	</layout>
+
+	<fields name="request"
+			addfieldpath="/administrator/components/com_product/models/fields"
+
+		>
+		<fieldset name="request">
+			<field
+					name="id"
+					type="product"
+					label="COM_TEST_TEST_FIELD_GREETING_LABEL"
+					description="COM_TEST_TEST_FIELD_GREETING_DESC"
+			>
+                                
+      		</field>
+		</fieldset>
+	</fields>
+</metadata>

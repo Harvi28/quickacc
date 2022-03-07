@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+				addrulepath="/administrator/components/com_test/models/rules"
+>
+	
+		<fieldset
+				name="details"
+				label="COM_TEST_TEST_DETAILS"
+	>
+		<field
+				name="id"
+				type="hidden"
+				/>
+		<field
+				name="catetitle"
+				type="text"
+				label="COM_TEST_TESTS_TITLE"
+				description="COM_TEST_TEST_TITLE_DESC"
+				size="40"
+				
+				required="true"
+				default=""
+				/>
+
+		<field
+				name="parentcat"
+				type="category"
+				extension="com_test"
+				class="inputbox"
+				default=""
+				label="COM_TEST_TEST_FIELD_PARENTCAT_LABEL"
+				description="COM_TEST_TEST_FIELD_PARENTCAT_DESC"
+				required="true"
+		>
+				<option value="1">MEN</option>
+				<option value="2">WOMEN</option>
+		</field>
+		
+		
+
+		<!--<field
+			name="created"
+			type="datetime"
+			label="COM_TEST_TESTS_CREATED"
+			
+			/>
+
+		<field
+			name="created_by"
+			type="int"
+			label="COM_TEST_TESTS_CREATED_BY"
+			required="true"
+			/>-->
+
+		<field 	name="published" 
+				type="list" 
+				label="JSTATUS"
+				description="JFIELD_PUBLISHED_DESC" 
+				class="chzn-color-state"
+				required="true"
+				filter="intval" 	
+				size="1" 
+				default="1"
+		>
+			<option value="1">
+				JPUBLISHED</option>
+			<option value="0">
+				JUNPUBLISHED</option>
+		</field>
+		<field
+			name="image"
+			type="file"
+			label="COM_TEST_TESTS_IMAGE"
+			required="true"
+			/>
+		<field 
+			name="short_desc"
+			type="text"
+			label="COM_TEST_TESTS_SHORT_DESC"
+			required="true"
+			/>
+		<field
+			name="des"
+			type="text"
+			label="COM_TEST_TESTS_DES"
+			required="true"
+			/>
+	</fieldset>
+
+	
+</form>

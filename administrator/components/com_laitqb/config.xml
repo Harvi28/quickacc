@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+	<fieldset
+		name="qb_setting"
+		label="Quickbook Settings"
+		description="Please update Quickbook related settings here"
+	>
+
+		<field
+			name="is_qb_on"
+			type="radio"
+			label="Quickbook Services"
+			description="if off Quickbook will not work"
+			default="0"
+		>
+			<option value="1">ON</option>
+			<option value="0">OFF</option>
+		</field>
+
+		<!--'client_id' => 'ABnds2mrj2oFq29WsWM81Fsmw5jNBEluAuS5ku9y0Xz5i5PozW',
+		'client_secret' => 'l4M7skPlh5JjuXQ2N5n7RMH8641zRygFvHyEYhT8',
+		'oauth_scope' => 'com.intuit.quickbooks.accounting openid profile email phone address',
+		'oauth_redirect_uri' => 'http://localhost/joomla/quickbook/administrator/index.php?option=com_laitqb&task=dashboard.callBack',
+		'base_url' => 'Development'-->
+
+		<field name="client_id" type="text" default="" label="Client ID" description="Enter Client ID" size="200" />
+
+		<field name="client_secret" type="password" default="" label="Client Secret" description="Client Secret" size="200" />
+
+		<field name="oauth_scope" type="text" default="" label="Oauth Scope" description="Oauth Scope"/>
+
+		<field name="oauth_redirect_uri" type="text" default="" label="Oauth Redirect Uri" description="oauth_redirect_uri"/>
+
+		<field
+			name="base_url"
+			type="radio"
+			label="Mode"
+			description="kepp it in development while testing"
+			default="Development"
+		>
+			<option value="Production">Production</option>
+			<option value="Development">Development</option>
+		</field>
+
+	</fieldset>
+
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+	>
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_laitqb"
+			section="component"
+		/>
+	</fieldset>
+</config>

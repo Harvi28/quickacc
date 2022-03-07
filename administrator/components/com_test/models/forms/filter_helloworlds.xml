@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_BANNERS_SEARCH_IN_TITLE"
+			hint="JSEARCH_FILTER"
+			class="js-stools-search-string"
+		/>
+		<field
+			name="published"
+			type="status"
+			label="JOPTION_SELECT_PUBLISHED"
+			description="JOPTION_SELECT_PUBLISHED_DESC"
+			onchange="this.form.submit();"
+			>
+			<option value="">JOPTION_SELECT_PUBLISHED</option>
+		</field>
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="COM_TEST_LIST_FULL_ORDERING"
+			description="COM_TEST_LIST_FULL_ORDERING_DESC"
+			onchange="this.form.submit();"
+			default="greeting ASC"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			
+			<option value="id ASC">JGRID_HEADING_ID_ASC</option>
+			<option value="id DESC">JGRID_HEADING_ID_DESC</option>
+			<option value="title ASC">COM_TEST_TITLE_ASC</option>
+			<option value="title DESC">COM_TEST_TITLE_DESC</option>
+			<option value="published ASC">COM_TEST_PUBLISHED_ASC</option>
+			<option value="published DESC">COM_TEST_PUBLISHED_DESC</option>
+			<option value="image ASC">COM_TEST_IMAGE_ASC</option>
+			<option value="image DESC">COM_TEST_IMAGE_DESC</option>
+			<option value="created ASC">COM_TEST_CREATED_ASC</option>
+			<option value="created DESC">COM_TEST_CREATED_DESC</option>
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="input-mini"
+			default="25"
+			label="COM_CONTENT_LIST_LIMIT"
+			description="COM_TEST_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

@@ -1,0 +1,10 @@
+
+
+CREATE TABLE `jsvcz_product` (
+	`id`       INT(11)     NOT NULL AUTO_INCREMENT,
+	
+	PRIMARY KEY (`id`)
+)
+	ENGINE =MyISAM
+	AUTO_INCREMENT =0
+	DEFAULT CHARSET =utf8;
